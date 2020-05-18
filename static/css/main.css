@@ -33,7 +33,12 @@ li {
   margin-left: 15px;
 }
 
-hr {
+a.navbar {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.navbar:hover {
   color: #3C3C3C;
 }
 
@@ -41,7 +46,7 @@ main {
   margin-left: 10px;
 }
 
-h2 {
+h2, h3 {
   color: #026C7C;
   font-family: 'IBM Plex Sans', sans-serif;
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Tom's Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Blog title</h1>
+      <ul>
+        <li id='first_nav'><a class='navbar' href="{{ url_for('home') }}">home</a></li>
+        <li><a class='navbar' href="{{ url_for('archive') }}">archive</a></li>
+        <li><a class='navbar' href="{{ url_for('about_me') }}">about me</a></li>
+      </ul>
+    </header>
+    <hr />
+    {% block content %}
+    {% endblock %}
+    <hr />
+    <footer>
+        Made by Tom
+    </footer>
+  </body>
+</html>
